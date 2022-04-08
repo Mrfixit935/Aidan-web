@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body, html {
+  background: skyblue;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  padding: 16px;
+  font-size: 111%;
+}
+
+h2 {
+  color: green; /* Keep this */
+}
+
+p {
+  color: white;
+}
+
+img {
+  float: left;
+  position: relative;
+  transition: 2s;
+}
+
+.menu-bar {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  opacity: 0.8;
+  transition: 0.75s;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.outside {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.status {
+  float: left;
+  left: -50%;
+  border: 1px #000;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.status:hover {
+  cursor: pointer;
+  background: green;
+  color: #FFF;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 8px 16px 0px #aaaaaa;
+}
+
+.title {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.3s;
+}
+
+.title:hover {
+  transform: scale(1.1, 1.1);
+}
+
+img {
+  cursor: pointer;
+  animation: rotation 1.75s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
